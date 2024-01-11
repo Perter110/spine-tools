@@ -1,0 +1,16 @@
+import os
+
+dstpath = './charactor_new'
+
+spinedownfile = "F:\worktool\spinedown2.0\skeletonViewer.jar com.esotericsoftware.spine.JsonRollback"
+dirlist2 = os.listdir(dstpath)
+
+for dirname in dirlist2:
+    workpath = os.path.join(dstpath, dirname)
+    jsonFile = workpath + "/%s.json"%dirname
+    if os.path.exists(jsonFile):
+        print("正在处理 %s"%dirname)
+        cmd = "java -cp " + spinedownfile + " " + str(jsonFile) + " 3.7 " + str(jsonFile)
+        os.system(cmd)
+    else:
+        print("%s.json文件不存在"%dirname)
