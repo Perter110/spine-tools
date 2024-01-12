@@ -6,6 +6,7 @@
 1.安装spine</br>
 2.将spine.exe的路径加入环境变量，用于指令操作</br>
 3.再spine里面导出保存配置，将改配置路径修改至spine_skel2json.py里面的 exportcfg_path =</br>
+![image](https://github.com/Perter110/spine-tools/assets/41050869/7c02588d-cb1d-4e85-8db3-cb47367ecdfc)
 4.spine_skel2json.py 修改需要源目录，和输出的目录，开始将skel转成json</br>
   我这边的源目录格式是  srcpath/spineName/spineName.skel ,按需修改</br>
 5.如果需要降版本，再运行一下spine_downbatch.py,修改好上一个输出的目录至dstpath</br>
